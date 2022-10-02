@@ -1,4 +1,6 @@
 ## Main script that will eventually run all scripts needed 
+## Run unsigned
+Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
 
 #Run script as admin 
 if (-NOT ([Security.Principal.WindowsPrincipal][Security.Principal.WindowsIdentity]::GetCurrent()).IsInRole([Security.Principal.WindowsBuiltInRole] "Administrator"))  
