@@ -15,11 +15,13 @@ Do{
     Write-Host "Weclome to the time saver script"
     Write-Host "1 - Rename PC"
     Write-Host "2 - Admin Account Setup"
+    Write-Host "3 - Activate Windows 10"
+    Write-Host "4 - Activate Windows 11"
     Write-Host "q - Quit"
     
     ## Menu response options with switch to go back to top
     
-    If($menu = Read-Host "Please enter 1 to 2:"){
+    If($menu = Read-Host "Please enter 1 to 4:"){
     Switch($menu){
     
                                  ## Menu responses
@@ -68,9 +70,21 @@ Do{
                 } else {
                 Write-Host "Passwords differ and the password was not set"
                 PAUSE
-                }
-        
-        
+                }   
+    }
+
+    3{
+      #Run as admin 
+if (-NOT ([Security.Principal.WindowsPrincipal][Security.Principal.WindowsIdentity]::GetCurrent()).IsInRole([Security.Principal.WindowsBuiltInRole] "Administrator"))  
+{  
+  $arguments = "& '" +$myinvocation.mycommand.definition + "'"
+  Start-Process powershell -Verb runAs -ArgumentList $arguments
+  Break
+}
+
+Start-Process -FilePath "C:\Users\$env:USERNAME\Downloads\scripts-regedits-main\Windows-10-only\Activate.bat" -NoNewWindow
+
+PAUSE
     }
     
     ## End of Switch, Q to quit otherwise go back to the start
