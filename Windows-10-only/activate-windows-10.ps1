@@ -5,6 +5,7 @@ if (-NOT ([Security.Principal.WindowsPrincipal][Security.Principal.WindowsIdenti
   Start-Process powershell -Verb runAs -ArgumentList $arguments
   Break
 }
+## Run the BATCH file
 
 Start-Process -FilePath "C:\Users\$env:USERNAME\Downloads\scripts-regedits-main\Windows-10-only\Activate.bat" -NoNewWindow
 
