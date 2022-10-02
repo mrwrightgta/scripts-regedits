@@ -1,5 +1,5 @@
 @echo off
-title Windows 11 ALL version activator&cls&echo ************************************&echo Supported products:&echo - Windows 11 Home&echo - Windows 11 Professional&echo - Windows 11 Enterprise, Enterprise LTSB&echo - Windows 11 Education&echo.&echo.&echo ************************************ &echo Windows 11 activation...
+title MrWright &cls&echo ************************************&echo Lets Activate this shit&echo Supported products:&echo - Windows 11 Home&echo - Windows 11 Professional&echo - Windows 11 Enterprise, Enterprise LTSB&echo - Windows 11 Education&echo.&echo.&echo ************************************ &echo Windows 11 would normally be expensive...
 cscript //nologo c:\windows\system32\slmgr.vbs /ipk W269N-WFGWX-YVC9B-4J6C9-T83GX >nul
 cscript //nologo c:\windows\system32\slmgr.vbs /ipk MH37W-N47XK-V7XM9-C7227-GCQG9 >nul
 cscript //nologo c:\windows\system32\slmgr.vbs /ipk NRG8B-VKK3Q-CXVCJ-9G2XF-6Q84J >nul
