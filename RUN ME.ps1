@@ -1,1 +1,2 @@
-powershell.exe -executionpolicy bypass -file "C:\Users\$env:USERNAME\Downloads\scripts-regedits-main\main\main-tasks.ps1"
+## Run unsigned
+Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
