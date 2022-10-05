@@ -1,0 +1,1 @@
+powershell.exe -executionpolicy bypass -file "C:\Users\$env:USERNAME\Downloads\scripts-regedits-main\main\main-tasks.ps1"
