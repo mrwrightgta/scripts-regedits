@@ -120,12 +120,11 @@ Do{
   Write-Host "What would you like to do"
   Write-Host "1 - Install Action1"
   Write-Host "2 - Uninstall Action1"
-  Write-Host "3 - Re-open Main Menu(NOTE:you will need to close off this menu seperately)"
   Write-Host "q - Quit"
   
   ## Menu response options with switch to go back to top
   
-  If($menu = Read-Host "Please enter 1 to 3:"){
+  If($menu = Read-Host "Please enter 1 to 2:"){
   Switch($menu){
   
   ## Menu responses
@@ -140,12 +139,6 @@ Do{
   2 {
     ## Uninstall MSI
     msiexec.exe /x "C:\Users\$env:USERNAME\Downloads\scripts-regedits-main\Action1\Action1.msi"
-  }
-
-  3 {
-    ## Reload main Script
-    
-    Start-Process C:\Users\$env:USERNAME\Downloads\scripts-regedits-main\MrWright.ps1
   }
   
   ## End of Switch, Q to quit otherwise go back to the start
