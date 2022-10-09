@@ -8,4 +8,4 @@ if (-NOT ([Security.Principal.WindowsPrincipal][Security.Principal.WindowsIdenti
 
 #  Add Exclusion for C:\Activate
 
-Add-MpPreference -ExclusionPath “C:\Activate”
+Add-MpPreference -ExclusionPath “C:\temp”
